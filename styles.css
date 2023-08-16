@@ -1,0 +1,244 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    /* min-width: 350px; */
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  img {
+    width: 300px;
+  }
+  a {
+    color: #ffe66d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 100px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h1,
+  h2 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+  }
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .item-details h3 + p {
+    font-style: italic;
+  }
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+  .divider > section {
+    border-bottom: 1px dashed #f7fff7;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  /* nav begin */
+  
+  nav {
+    position: fixed;
+    background: white;
+    color: black;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    justify-content: center;
+  }
+  
+  nav h1 {
+    color: #6b8897;
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #7693a2;
+  }
+  
+  .desktopnav {
+    height: 9vh;
+    width: 92vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navlinks ul {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navlinks li {
+    list-style: none;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+  }
+  
+  header {
+    /* background: #2F3061; */
+    background:#222346;
+    color: #f7fff7;
+    text-align: center;
+  }
+  
+  .profile {
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  /* Projects
+  ------------------------------------*/
+  .projects {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    color: #2f3061;
+  }
+  .projects a {
+    color: rgb(42, 18, 22);
+  }
+  .projects .btn {
+    color:#343434;
+    background: #2f3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+  
+  /* Skills */
+  .skills {
+    background: rgb(55, 76, 81);
+    color: rgb(245, 229, 201);
+  }
+  
+  /* Education
+  ------------------------------------*/
+  .education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color: #2f3061;
+  }
+  .education p {
+    width: 60%;
+  }
+  
+  /* Contact Info
+  ------------------------------------*/
+  footer {
+    background: #343434;
+    color: #f7fff7;
+    text-align: center;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+  }
+  
+  /* Responsive
+  ---------------------------------------*/
+  
+  /*  */
+   
+   @media screen and (max-width:1200px) {
+    .desktopnav {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+    br {
+      display: none;
+  }
+     h1{
+       font-size: 75px;
+       line-height: 0.9;
+       margin-bottom: 20px;
+     }
+   
+     h2{
+       line-height: 1;
+     }
+   
+     .contact-list a{
+       padding: 5px;
+     }
+   
+     .job-item{
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       column-gap: 20px;
+     }
+     
+     .profile{
+       border-radius: 50%;
+       display: inline-block;
+       width: 100px;
+       height: 100px;
+     }
+   
+   }
+  
